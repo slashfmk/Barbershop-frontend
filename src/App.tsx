@@ -39,7 +39,7 @@ function App() {
           <Route path={"contact"} element={<Contact />} />
           <Route path={"about"} element={<About />} />
           <Route path={"appointment"} element={auth ? <Appointment /> : <LogIn />} />
-          <Route path={"appointmentdetail/:id"} element={auth ? <AppointmentDetail /> : <LogIn />} />
+          <Route path={"appointment-detail/:id"} element={auth ? <AppointmentDetail /> : <LogIn />} />
           <Route path={"all-appointments"} element={auth ? <AllAppointments /> : <LogIn />} />
           <Route path={"create-service"} element={auth ? <CreateService /> : <LogIn />} />
           <Route path={"logout"} element={auth ? <Logout /> : <Home />} />
