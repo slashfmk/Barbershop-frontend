@@ -71,7 +71,7 @@ const AppointmentCard: React.FC<IAppointmentCard> = (props) => {
                     <p className="font-semibold text-slate-500 relative top-[-11px] right-1 ">{props.service_count}</p>
                 </div>
                     <div className='hover:cursor-pointer self-center' ><FaTrash onClick={async () => mutation.mutateAsync(props.id)} /></div>
-                    <Link to={`/appointment-detail/${props.id}`} className='hover:cursor-pointer self-center' ><FaInfoCircle/></Link>
+                    <Link to={`/appointmentdetail/${props.id}`} className='hover:cursor-pointer self-center' ><FaInfoCircle/></Link>
             </div>
         </div>
     );
